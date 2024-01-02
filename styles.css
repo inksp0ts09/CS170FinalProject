@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0 auto;
+    background-color: #010150;
+    width: 100%;
+    color: #959595;
+    font-size: large;
+  }
+
+  .header {
+    text-align: center;
+    grid-area: header;
+    margin-top: 100px;
+  }
+
+  #page-heading {
+    text-align: center;
+    color: #dddddd;
+}
+
+  .main .container {
+    width: 80%;
+    background-color: #010150;
+    border: solid black 1px;
+    border-radius: 20px;
+    margin: 20px auto 30px auto;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+   .nav-menu {
+    width: 100%;
+    background-color: #010150;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 75px;
+    gap: 30px;
+    padding: 0 35px;
+  }
+
+  .nav-item a {
+    width: 100%;
+    text-decoration: none;
+    color: #A16E83;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+  }
+  
+  .nav-menu .nav-item button {
+    margin: 5px;
+    padding: 7px;
+    font-size: 18px;
+    background-color:#B19F9E;
+}
+
+.nav-item {
+margin-left: 10px;
+margin-right: 10px;
+font-size: 18px;
+}
+
+.content {
+  margin: 10%;
+  padding: 10px 15px;
+  width: 85%;
+  border-radius: 20px;
+  float: left;
+  grid-area: content;
+  margin-left: 8%;
+}
+
+.mission-statement {
+  margin-bottom: 0;
+}
+
+.mission-statement-content {
+  grid-template-areas: content;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+li {
+  font-weight: bold;
+  list-style: none;
+  text-align: center;
+  margin: 1%; 
+  margin-top: 0;
+}
+
+
+.services {
+  margin: 20px auto 30px auto;
+    padding: 10px 15px;
+    width: 85%;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.wholesome {
+  margin: 20px auto 30px auto;
+  padding: 10px 15px;
+  width: 85%;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.faq {
+  margin: 20px auto 30px auto;
+    padding: 10px 15px;
+    width: 85%;
+    border-radius: 20px;
+    justify-content: center;
+  text-align: center;
+}
+
+.faq_value {
+    font-weight: bold;
+}
+
+input {
+  margin: 15px;
+}
+
+button {
+  margin: 15px;
+  padding: 7px;
+  font-size: 18px;
+  background-color:#B19F9E;
+}
+
+p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+  .team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .team-member {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .meet .name .email {
+   margin: 0;
+   padding: 0;
+  }
+
+  @media screen and (min-width: 600px) {
+    .team {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-left: 20px;
+    }
+    img {
+      max-width: 300px;
+      max-height: 300px;
+      height: auto;
+      width: auto;
+    }
+    .nav-item {
+      font-size: small;
+      margin: 5px;
+      padding: 7px;
+      background-color:#B19F9E;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .team-container {
+      box-sizing: border-box;
+      display: flex;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-left: 20px;
+    }
+    img {
+      max-width: 300px;
+      max-height: 300px;
+      height: auto;
+      width: auto;
+    }
+  }
